@@ -72,5 +72,13 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.content{
+		width: 1285px;
+		margin: auto;
+		position: relative;
+	}
+	#header{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
