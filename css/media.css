@@ -51,23 +51,44 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width : 1px) {
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
+@media only screen and (min-width : 100px) {
+	.reviews_block{
+		margin: 15px auto;
+		float: none;
+	}
+	.text_margin .row{
+		margin: 0;
+	}
+	.text_margin{
+		margin-left: 0;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.reviews_block{
+		margin: 15px;
+		float: left;
+	}
+	.text_margin{
+		margin-left: 2%;
+	}
 }
-
+@media only screen and (min-width : 850px) {
+	.text_margin{
+		margin-left: 9%;
+	}
+}
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.text_margin{
+		margin-left: 16%;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -80,5 +101,12 @@
 	#header{
 		padding-left: 0;
 		padding-right: 0;
+	}
+	#main_form_section1 h3{
+		font-size: 45px;
+		padding-bottom: 25px;
+	}
+	.text_margin{
+		margin-left: 7%;
 	}
 }
