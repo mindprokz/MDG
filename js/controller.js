@@ -24,8 +24,26 @@ var app = angular.module('myApp', ['ngRoute'])
     	changeChoosenActivity(2);
     	doNormalRepertory();
     	changeRepertoryLong();
-
     }
+
+    $(".fancybox").click(function() {
+        $(".fancybox").fancybox({
+            maxWidth: 800,
+            maxHeight: 600,
+            fitToView: false,
+            width: document.documentElement.clientWidth > 700?'80%':'90%',
+            height: document.documentElement.clientWidth > 700?'80%':'50%',
+            autoSize: false,
+            closeClick: false,
+            openEffect: 'fade',
+            closeEffect: 'elastic',
+            helpers: {
+                title: {
+                    type: 'inside'
+                }
+            }
+        });
+    });
 })
 .config(function($routeProvider, $locationProvider) {
     $routeProvider
